@@ -351,3 +351,25 @@ nav .navbar .links li .sub-menu li{
 
 
 /* LOADER STYLES END  */
+
+
+/* CARD  */
+@media (max-width:800px) {
+  .cards-custom{
+    flex-direction: column;
+
+  }
+  .cards-custom .card-anc{
+    width: 100%;
+    height: 50vh;
+
+  }
+  .card-img-top{
+    height:20vh;
+  }
+}
+hr{
+  border: 1px solid white;
+  width: 100%;
+}
+/* CARD END  */

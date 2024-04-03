@@ -105,7 +105,3 @@ jsArrow.onclick = function() {
 
 // LOADER ANIMATION END 
 
-
-// CARDS ANIMATION 
-
-// CARDS ANIMATION END
