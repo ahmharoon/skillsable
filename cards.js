@@ -56,3 +56,19 @@ gsap.from('.left',{
 
 })
 //   MISSION END
+
+// BLOGS ANIATION
+const tl = gsap.timeline();
+tl.from(".innerblogs",{
+    x:"-100%",
+    duration: 1,
+    opacity: 0,
+    stagger:0.5,
+    scrollTrigger:{
+      trigger: ".blog-container" ,
+      start: 'top bottom',
+      end:'bottom bottom',
+      scrub:true,
+    }
+  })
+// BLOGS ANIATION END

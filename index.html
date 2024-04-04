@@ -188,11 +188,8 @@
     <!-- END CARDS  -->
 
     <!-- CARD-2  -->
-    <div class="card-2-bg w-full min-h-screen fixed top-0 left-0 z-[-10000]">
-      <img class="object-cover w-full h-screen " src="assets/card-2-bg.gif" alt="">
-    </div>
-    <div class="card-2 w-full min-h-[50vh] text-white mg p-10 ">
-      <div class="bg-[#1a3765] w-full h-full flex gap-5 flex-col items-center text-[30px] rounded-md p-5">
+    <div class="card-2 w-full min-h-[50vh] text-white mg p-10 bg-[#fff]">
+      <div class="bg-[#1a3765] w-full h-full flex gap-5 flex-col items-center text-[30px] rounded-md p-5 shadow-lg">
         <a href="pta.html"><div class="inerr-card-2 flex gap-5 items-center"><i class="fa-solid fa-mobile-retro" style="color: #7c1c16;"></i><h1 class="mg">Professional Development</h1></div></a>
         <hr>
         <a href="admission"></a><div class="inerr-card-2 flex gap-5 items-center"><i class="fa-solid fa-bag-shopping" style="color: #7c1c16;"></i><h1 class="mg">
@@ -214,21 +211,97 @@
     <!-- MISSION -->
 
     <div class="mission flex items-center justify-center w-full p-[5vw] bg-[#7c1c16] text-[#fff]">
-      <div class="left w-1/2 bg-gray-900 rounded-md p-[2vw] shadow-lg">
+      <div class="left w-full bg-gray-900 rounded-md p-[2vw] shadow-lg md:w-1/2">
         <h1 class="mg text-[40px]">Our Mission:</h1>
         <h1 class=" leading-10 font-mono font-light">We strive to prepare all students to become lifelong learners and responsible citizens ready to meet the challenges of the future. <br>Our Mission is to provide high quality education in a safe, respectful and inclusive environment that builds a foundation for life-long learning.
         </h1>
       </div>
-      <div class="right w-1/2"></div>
+      <div class="right w-0 md:w-1/2"></div>
     </div>
     <!-- MISSION END -->
 
 
     <!-- BLOGS  -->
-    <div class="blogs">
-       
+    <div class="blog-container py-[5vw] bg-[#fff]">
+      <div class="shadow-blog p-[5vw] flex flex-col  items-center justify-center w-full bg-[#fff] shadow-lg">
+        <div class="heading-blog text-[40px] m-3">
+          <h1 class="mg">Blogs</h1>
+        </div>
+        <div class="blogs flex w-full gap-5 flex-wrap">
+          <div class="innerblogs bg-[url('assets/blog-1.jpg')] bg-cover bg-center grow">
+            <div class="bg-gray-100/75 flex flex-col p-10 gap-5  hover:bg-gray-100/0  items-center justify-center">
+              <h1>Why Study in Australia</h1>
+              <button type="button" class="btn btn-outline-danger"><a href="blogs">Read More</a></button>
+            </div>
+          </div>
+          <div class="innerblogs bg-[url('assets/blog-2.jpg')] bg-cover bg-center grow">
+            <div class="bg-gray-100/75 flex flex-col p-10 gap-5  hover:bg-gray-100/0  items-center justify-center">
+              <h1>How Does Skill Recognition Helps Individuals in Australia</h1>
+              <button type="button" class="btn btn-outline-danger"><a href="blogs">Read More</a></button>
+            </div>
+          </div>
+          <div class="innerblogs bg-[url('assets/blog-3.jpg')] bg-cover bg-center grow">
+            <div class="bg-gray-100/75 flex flex-col p-10 gap-5  hover:bg-gray-100/0  items-center justify-center">
+              <h1>Industry Trends</h1>
+              <button type="button" class="btn btn-outline-danger"><a href="blogs">Read More</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- BLOGS END -->
+
+
+    <!-- LOCATION  -->
+    <div class="location flex flex-col bg-[#fff] justify-center items-center h-[50vh] p-[5vw]">
+      <h1 class="mg text-[40px]">Our Location</h1>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Level-14%2F333+Collins+St&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online-timer.me/">online timer</a><br><a href="https://www.analarmclock.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 100%;width: 100%;}</style><a href="https://www.mapembed.net">google satellite maps zoom</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 100%;width: 100%;}</style></div></div>
+    </div>
+    <!-- LOCATION END -->
+
+    <!-- SUPPORT -->
+    <div class="card-2-bg w-full h-screen  fixed top-0 left-0 z-[-10000]">
+      <img class="object-cover w-full h-screen" src="assets/for-contact.jpg" alt="">
+    </div>
+    <div class="support-container w-full h-[50vh] flex flex-col justify-center items-center">
+      <h1 class="mg text-[40px] text-red-900">Do you need support?</h1>
+      <button type="button" class="btn btn-outline-danger">Contact us</button>
+    </div>
+    <!-- SUPPORT END -->
+
+    <!-- FOOTER  -->
+    <div class="footer-container flex flex-col  bg-red-900 justify-center items-center text-[#fff] min-h-screen">
+      <div class="flex flex-col p-[5vw] bg-red-900 justify-center items-center text-[#fff] mb-[3vw]">
+        <div class="container-1 flex gap-5 w-full flex-wrap">
+          <div class="left-footer grow flex flex-col justify-center items-center">
+            <h1 class="mg text-[40px]">Contact Info</h1>
+            <hr>
+            <p>0420 681 181</p>
+            <p>Email: info@skillsable.com.au</p>
+            <p>Level 14 333 Collins Street, Melbourne VIC, 3000</p>
+          </div>
+          <div class="rigth-footer grow flex flex-col justify-center items-center">
+            <h1 class="mg text-[40px]">Quick Links</h1>
+            <hr>
+            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="terms&condition.html">Term & Conditions</a>
+            <a href="client_service_agreement.html">Client Service Agreement</a>
+          </div>
+        </div>
+        <div class="container-2 flex flex-col justify-center items-center gap-5 mb-5">
+          <h1 class="mg text-[40px] text-center">For Quick Response</h1>
+          <a href="https://wa.me/61420681181?text=Hello..!%20Welcome%20to%20Skillsable%20How%20can%20we%20help%20you."><img class="w-[50px] h-[50px]" src="/assets/whatsApp-img.png" alt=""></a>
+        </div>
+        <div class="container-3 flex justify-center items-center flex-wrap gap-5">
+          <div class="flag-1w-[50px] h-[50px]"><img class="w-[50px] h-[50px]" src="assets/flag-1.jpg" alt=""></div>
+          <div class="flag-2w-[50px] h-[50px]"><img class="w-[50px] h-[50px]" src="assets/flag-2.jpg" alt=""></div>
+          <div><p class="font-mono">At Skillsable, diversity, equity and inclusion are at the core of who we are. Our commitment to these values is unwavering. We acknowledge and recognise the wurundjeri woi-wurrung people of the Kulin Nation as the traditional custodians of the land upon which we live and work, and we pay our respects to their elders past, present and emerging.</p></div>
+        </div>
+        <div><p>ABN: 25 670 383 445</p></div>
+      </div>
+      <div class="bg-[#1a3765] mg w-full text-center ">Copyright © 2023, All rights reserved | Developed by Tech Pavilion.</div>
+    </div>
+    <!-- FOOTER END -->
 
 
 
