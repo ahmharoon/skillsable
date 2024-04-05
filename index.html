@@ -12,12 +12,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+
+  <!-- APPOINTMENT  -->
+<div class="appointment-form p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-20">
+  <div class="app-form w-full md:w-2/5 h-[70%] md:h-full rounded-lg  bg-gray-300">
+    <div class="head-form flex justify-between px-10 py-5 items-center">
+      <h1 class="text-[20px]">Get in Touch </h1>
+      <div class="close-form"><i class="fa-solid fa-xmark" style="color: #284059;width: 20px;"></i></div>
+    </div>
+    <hr>
+    <div class="main-form p-[50px] pt-[30px]">
+      <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
+      <div class="flex my-2">
+        <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
+        <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
+      </div>
+      <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
+      <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
+      <button type="submit" class="btn btn-outline-danger">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- END APPOINTMENT -->
+
     <!-- LOADER -->
     <div class="loader w-full h-screen bg-[url('assets/loader.jpg')] bg-cover bg-bottom">
 
-        <div class="shadow w-full h-screen bg-black/[.95] gap-5 flex items-center justify-center flex-col relative">
+        <div class="shadow   w-full h-screen bg-black/[.95] gap-5 flex items-center justify-center flex-col relative">
             
-            <div class="logo-anima flex flex-col gap-5 justify-center items-center">
+            <div class="logo-anima flex mt-[25vw] md:mt-[0px] flex-col gap-5 justify-center items-center">
                 <div class="border-2 border-white/0 h-[76px] w-[43px]" >
                     <div class="tris relative w-full h-full">
                         <div class="absolute right-[-4.65%] top-[3.95%] border-b-[#7c1c16] triangle-1"></div>
@@ -68,40 +97,40 @@
     <!-- NAVBAR START  -->
     <div class="nav-conatiner fixed z-[10] top-0 pt-[2vw] px-[5vw] w-full">
         <nav>
-            <div class="navbar">
+            <div class="navbar w-full">
               <i class='bx bx-menu'></i>
-              <div class="logo"><a href="#">SKILLSABLE</a></div>
+              <div class="logo"><a href="index.html">SKILLSABLE</a></div>
               <div class="nav-links">
                 <div class="sidebar-logo">
                   <span class="logo-name">SKILLSABLE</span>
                   <i class='bx bx-x' ></i>
                 </div>
                 <ul class="links">
-                  <li><a href="#">HOME</a></li>
+                  <li><a href="index.html">HOME</a></li>
                   <li>
                     <a href="#">Professional Development</a>
                     <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
                     <ul class="htmlCss-sub-menu sub-menu">
-                      <li><a href="#">Recognition of Prior Learning RPL</a></li>
-                      <li><a href="#">Self paced Learning</a></li>
-                      <li><a href="#">Online Learning</a></li>
+                      <li><a href="rpl.html">Recognition of Prior Learning RPL</a></li>
+                      <li><a href="self-learning.html">Self paced Learning</a></li>
+                      <li><a href="online-learning.html">Online Learning</a></li>
                     </ul>
                   </li>
                   <li>
                     <a href="#">Other Services</a>
                     <i class='bx bxs-chevron-down js-arrow arrow '></i>
                     <ul class="js-sub-menu sub-menu">
-                      <li><a href="#">PTE</a></li>
-                      <li><a href="#">NAATI</a></li>
-                      <li><a href="#">IELTS</a></li>
-                      <li><a href="#">Resume Assistance</a></li>
-                      <li><a href="#">Job Assistance</a></li>
+                      <li><a href="pte.html">PTE</a></li>
+                      <li><a href="naati.html">NAATI</a></li>
+                      <li><a href="ielts.html">IELTS</a></li>
+                      <li><a href="resume-assistance.html">Resume Assistance</a></li>
+                      <li><a href="job-assistance.html">Job Assistance</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">NDIS Training</a></li>
-                  <li><a href="#">Addmissions</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Blogs</a></li>
+                  <li><a href="ndis.html">NDIS Training</a></li>
+                  <li><a href="admissions.html">Addmissions</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="blogs.html">Blogs</a></li>
                 </ul>
               </div>
             </div>
@@ -264,13 +293,13 @@
       <img class="object-cover w-full h-screen" src="assets/for-contact.jpg" alt="">
     </div>
     <div class="support-container w-full h-[50vh] flex flex-col justify-center items-center">
-      <h1 class="mg text-[40px] text-red-900">Do you need support?</h1>
-      <button type="button" class="btn btn-outline-danger">Contact us</button>
+      <h1 class="mg text-[40px] text-red-900 text-center">Do you need support?</h1>
+      <button type="button" class="contact-btn btn btn-outline-danger">Contact us</button>
     </div>
     <!-- SUPPORT END --> 
 
     <!-- FOOTER  -->
-    <div class="footer-container flex flex-col  bg-red-900 justify-center items-center text-[#fff] min-h-screen">
+    <div class="footer-container flex flex-col  bg-red-900 justify-center items-center text-[#fff] min-h-screen w-full">
       <div class="flex flex-col p-[5vw] bg-red-900 justify-center items-center text-[#fff] mb-[3vw]">
         <div class="container-1 flex gap-5 w-full flex-wrap">
           <div class="left-footer grow flex flex-col justify-center items-center">
@@ -315,6 +344,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="contactForm.js"></script>
     <script src="cards.js"></script>
     <script src="script.js"></script>
 

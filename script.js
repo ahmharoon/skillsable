@@ -105,3 +105,4 @@ jsArrow.onclick = function() {
 
 // LOADER ANIMATION END 
 
+

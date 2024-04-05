@@ -373,3 +373,59 @@ hr{
   width: 100%;
 }
 /* CARD END  */
+
+
+/* STEPS STYLE  */
+.step {
+  display: none; /* Hide all steps by default */
+  opacity: 0; /* Start with steps invisible for a smooth fade-in */
+  transition: opacity 0.5s; /* Smooth transition for opacity */
+}
+
+.step.active {
+  display: block; /* Show only the active step */
+  opacity: 1; /* Ensure the active step is fully visible */
+}
+.step-number{
+  font-size: 10px;
+  text-align: center;
+
+}
+.step-heading{
+  font-size: 30px;
+  font-family: MG;
+  text-align: center;
+}
+.step-paragraph{
+  text-align: center;
+}
+
+
+
+
+
+
+/* STEPS STYLE END */
+
+
+
+/* CARDS STYLE  */
+.card-n{
+  border-radius: 5px;
+  overflow: hidden;
+}
+.rotate-rpl {
+  transform: rotateX(90deg);
+}
+
+.card-n:hover .rotate-rpl {
+  transform: rotateY(0deg); /* Rotate the container on hover */
+  transition: transform 0.5s;
+}
+.rotate-rpl .mg{
+  font-size: 30px;
+}
+.rotate-rpl p,.rotate-rpl h1{
+  margin: 3px;
+}
+/* CARDS STYLE END */
