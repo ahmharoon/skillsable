@@ -429,3 +429,33 @@ hr{
   margin: 3px;
 }
 /* CARDS STYLE END */
+
+
+/* SELF LEARNING MAIN  */
+.para{
+  background: rgb(127 29 29);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.para:hover{
+  background-color: rgb(197, 53, 53);
+  cursor: pointer;
+}
+.heading{
+  font-size: 20px;
+}
+/* SELF LEARNING MAIN END */
+
+/* ONLINE LEARNING  */
+.inner-card-online{
+  padding: 2vw;
+  border-radius: 5px;
+}
+.inner-card-online:hover{
+  box-shadow:0px 0px 15px 0px rgba(0,0,0,0.75);
+  width: 110%;
+}
+
+/* ONLINE LEARNING END */

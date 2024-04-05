@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <!-- APPOINTMENT  -->
+<div class="appointment-form overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center items-center fixed z-20 hidden">
+  <div class="app-form w-full md:w-2/5 h-[70%] md:h-full rounded-lg  bg-gray-300">
+    <div class="head-form flex justify-between px-10 py-5 items-center">
+      <h1 class="text-[20px]">Get in Touch </h1>
+      <div class="close-form"><i class="fa-solid fa-xmark" style="color: #284059;width: 20px;"></i></div>
+    </div>
+    <hr>
+    <div class="main-form p-[50px] pt-[30px]">
+      <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
+      <div class="flex my-2">
+        <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
+        <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
+      </div>
+      <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
+      <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
+      <button type="submit" class="btn btn-outline-danger">Submit</button>
+    </div>
+
+  </div>
+</div>
+<!-- END APPOINTMENT -->
+
+    <!-- LOADER -->
+    <div class="loader w-full h-screen bg-[url('assets/loader.jpg')] bg-cover bg-bottom">
+
+        <div class="shadow   w-full h-screen bg-black/[.95] gap-5 flex items-center justify-center flex-col relative">
+            
+            <div class="logo-anima flex mt-[25vw] md:mt-[0px] flex-col gap-5 justify-center items-center">
+                <div class="border-2 border-white/0 h-[76px] w-[43px]" >
+                    <div class="tris relative w-full h-full">
+                        <div class="absolute right-[-4.65%] top-[3.95%] border-b-[#7c1c16] triangle-1"></div>
+                        <div class="absolute left-[-4.65%] top-[3.95%] border-b-[#a71c22] triangle-2"></div>
+                        <div class="absolute left-[-4.65%] top-[19.74%] border-b-[#d31f26] triangle-1"></div>
+                        <div class="absolute left-[-4.65%] top-[36%] border-b-[#d31f26] triangle-2"></div>
+                        <div class="absolute right-[-4.65%] top-[36%] border-b-[#f26279] triangle-1"></div>
+                        <div class="absolute right-[-4.65%] bottom-[20%] border-b-[#f26279] triangle-2"></div>
+                        <div class="absolute right-[-4.65%] bottom-[3.95%] border-b-[#f795a6] triangle-1"></div>
+                        <div class="absolute left-[-4.65%] bottom-[3.95%] border-b-[#fcbbd5] triangle-2"></div>
+                    </div>
+                </div>
+                <div class="logotxt-container overflow-hidden">
+                    <h1 class=" logotext" >SKILLSABLE</h1>
+                </div>
+            </div>
+            
+            <div class="contact flex w-[75%] gap-5 overflow-hidden">
+                <div class="phone flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
+                    <div class="icon"><i class="fa-solid fa-phone" style="color: #7c1c16;"></i></div>
+                    <div class="info mg">Contact Us : </div>
+                    <div>0420 681 181</div>
+                </div>
+                <div class="mail flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
+                    <div class="icon"><i class="fa-solid fa-envelope" style="color: #7c1c16;"></i></div>
+                    <div class="info mg">Email Us : </div>
+                    <div>info@skillsable.com.au</div>
+                </div>
+                <div class="location flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
+                    <div class="icon"><i class="fa-solid fa-location-dot" style="color: #7c1c16;"></i></div>
+                    <div class="info mg">Location:</div>
+                    <div class="text-center"> Level 14 333 Collins Street, Melbourne VIC, 3000</div>
+                </div>
+            </div>
+            <div class="help w-9/12 flex justify-center flex-col items-center rounded-md bg-[#1a3765]">
+                <div class="help-txt mg">Let our passionate team assist you</div>
+                <div class="links flex items-center gap-5 justify-center">
+                    <div class="l1 "><a href="https://www.facebook.com/skillsableptyltd"><i class="help-icons text-[30px] fa-brands fa-square-facebook"></i></a></div>
+                    <div class="l1"><a href="https://www.instagram.com/skillsableptyltd/"><i class="help-icons text-[30px] fa-brands fa-square-instagram"></i></a></div>
+                    <div class="l1"><a href="https://www.linkedin.com/company/skillsable"><i class="help-icons text-[30px] fa-brands fa-linkedin"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOADER END -->
+
+
+    <!-- NAVBAR START  -->
+    <div class="nav-conatiner fixed z-[10] top-0 pt-[2vw] px-[5vw] w-full">
+        <nav>
+            <div class="navbar w-full">
+              <i class='bx bx-menu'></i>
+              <div class="logo"><a href="index.html">SKILLSABLE</a></div>
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name">SKILLSABLE</span>
+                  <i class='bx bx-x' ></i>
+                </div>
+                <ul class="links">
+                  <li><a href="index.html">HOME</a></li>
+                  <li>
+                    <a href="#">Professional Development</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                      <li><a href="rpl.html">Recognition of Prior Learning RPL</a></li>
+                      <li><a href="self-learning.html">Self paced Learning</a></li>
+                      <li><a href="online-learning.html">Online Learning</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Other Services</a>
+                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                    <ul class="js-sub-menu sub-menu">
+                      <li><a href="pte.html">PTE</a></li>
+                      <li><a href="naati.html">NAATI</a></li>
+                      <li><a href="ielts.html">IELTS</a></li>
+                      <li><a href="resume-assistance.html">Resume Assistance</a></li>
+                      <li><a href="job-assistance.html">Job Assistance</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="ndis.html">NDIS Training</a></li>
+                  <li><a href="admissions.html">Addmissions</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </div>
+
+    <!-- NAVBAR END  -->
+
+    <!-- HEADER  -->
+    
+    <div class="header p-[5vw] w-full bg-red-900 text-center">
+        <h1 class="text-[30px] mg text-white">Online Learning</h1>
+    </div>
+    
+    <!-- HEADER END -->
+
+    <!-- MAIN  -->
+    <div class="main w-full p-[5vw] bg-gray-100 text-center">
+        <p class="into font-mono">
+            Online learning, also known as e-learning or distance education, refers to the use of digital technologies and the internet to deliver educational content and facilitate learning remotely. This mode of learning has gained significant popularity in recent years, and it offers several advantages and challenges. Here are some key aspects of online learning:
+        </p>
+        <h1 class="mg font-bold text-[30px] m-3">Advantages of Online Learning</h1>
+        <div class="card-online flex gap-5 flex-wrap text-[#fff]">
+            <div class="inner-card-online  md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Flexibility</h1>
+                <p>Online learning allows students to access educational materials and participate in classes from anywhere with an internet connection. This flexibility is particularly beneficial for working adults, parents, or individuals with other commitments.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Accessibility</h1>
+                <p>Online courses make education accessible to a wider audience, including those who may have physical disabilities or live in remote areas without easy access to traditional educational institutions.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Wide Range of Courses</h1>
+                <p>Online platforms offer a vast array of courses and programs, from academic degrees to professional certifications, covering various subjects and disciplines.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Self-Paced Learning</h1>
+                <p>Many online courses offer self-paced learning options, enabling students to progress through the material at their own speed, which can be beneficial for those who need extra time to grasp concepts or who want to accelerate their learning.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Cost-Effective</h1>
+                <p>Online courses often cost less than traditional on-campus programs. Students can save on commuting, housing, and other expenses associated with attending a physical institution.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Interactive Learning</h1>
+                <p>Modern online learning platforms incorporate various interactive elements, such as videos, quizzes, forums, and virtual labs, to engage students and promote active learning.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Personalized Learning
+                </h1>
+                <p>Some online courses use algorithms to tailor content to individual students' needs, providing personalized learning experiences.
+                </p>
+            </div>
+        </div>
+        <h1 class="mg font-bold text-[30px] mt-[5vw] mb-3">Chanllenges of Online Learning</h1>
+        <div class="card-online flex gap-5 flex-wrap text-[#fff]">
+            <div class="inner-card-online  md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Technical Issues</h1>
+                <p>Online learners may encounter technical problems such as internet connectivity issues, software compatibility, or hardware malfunctions.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Isolation</h1>
+                <p>Studying online can be isolating, as learners miss out on in-person interactions and social aspects of traditional education.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Time Management</h1>
+                <p>Managing time effectively in an online environment can be challenging, especially for those with other responsibilities.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Self-Discipline</h1>
+                <p>Online learners need strong self-discipline to stay motivated and keep up with coursework without regular classroom sessions.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Limited Feedback</h1>
+                <p>Getting timely feedback from instructors may be limited in online courses, affecting the learning experience.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Distractions</h1>
+                <p>Home environments can be filled with distractions that hinder concentration and focus during online classes.</p>
+            </div>
+            <div class="inner-card-online md:basis-[500px] basis-[300px] grow bg-red-900">
+                <h1 class="mg font-bold text-[20px]">Assessment Integrity
+                </h1>
+                <p>Ensuring the integrity of assessments, such as exams and assignments, can be challenging in online education.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN END -->
+
+    <!-- OUTRO -->
+    <div class="outro w-full py-[5vw] bg-gray-100">
+        <div class="inner-outro p-[5vw] bg-zinc-900" style="box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);">
+            <p class="text-orange-400 text-center">Online learning is a versatile and valuable educational option, but its effectiveness depends on the individual's learning style, goals, and circumstances. It's essential for students considering online education to carefully evaluate their needs and choose programs and platforms that align with their objectives and preferences. Additionally, staying organized and self-motivated is key to success in online learning environments.</p>
+        </div>
+    </div>
+    <!-- OUTRO END -->
+
+
+
+
+      <!-- SUPPORT -->
+      <div class="card-2-bg w-full h-screen  fixed top-0 left-0 z-[-10000]">
+        <img class="object-cover w-full h-screen" src="assets/for-contact.jpg" alt="">
+      </div>
+      <div class="support-container w-full h-[50vh] flex flex-col justify-center items-center">
+        <h1 class="mg text-[40px] text-red-900 text-center">Do you need support?</h1>
+        <button type="button" class="contact-btn btn btn-outline-danger">Contact us</button>
+      </div>
+      <!-- SUPPORT END --> 
+  
+      <!-- FOOTER  -->
+      <div class="footer-container flex flex-col  bg-red-900 justify-center items-center text-[#fff] min-h-screen w-full">
+        <div class="flex flex-col p-[5vw] bg-red-900 justify-center items-center text-[#fff] mb-[3vw]">
+          <div class="container-1 flex gap-5 w-full flex-wrap">
+            <div class="left-footer grow flex flex-col justify-center items-center">
+              <h1 class="mg text-[40px]">Contact Info</h1>
+              <hr>
+              <p>0420 681 181</p>
+              <p>Email: info@skillsable.com.au</p>
+              <p>Level 14 333 Collins Street, Melbourne VIC, 3000</p>
+            </div>
+            <div class="rigth-footer grow flex flex-col justify-center items-center">
+              <h1 class="mg text-[40px]">Quick Links</h1>
+              <hr>
+              <a href="privacy_policy.html">Privacy Policy</a>
+              <a href="terms&condition.html">Term & Conditions</a>
+              <a href="client_service_agreement.html">Client Service Agreement</a>
+            </div>
+          </div>
+          <div class="container-2 flex flex-col justify-center items-center gap-5 mb-5">
+            <h1 class="mg text-[40px] text-center">For Quick Response</h1>
+            <a href="https://wa.me/61420681181?text=Hello..!%20Welcome%20to%20Skillsable%20How%20can%20we%20help%20you."><img class="w-[50px] h-[50px]" src="/assets/whatsApp-img.png" alt=""></a>
+          </div>
+          <div class="container-3 flex justify-center items-center flex-wrap gap-5">
+            <div class="flag-1w-[50px] h-[50px]"><img class="w-[50px] h-[50px]" src="assets/flag-1.jpg" alt=""></div>
+            <div class="flag-2w-[50px] h-[50px]"><img class="w-[50px] h-[50px]" src="assets/flag-2.jpg" alt=""></div>
+            <div><p class="font-mono">At Skillsable, diversity, equity and inclusion are at the core of who we are. Our commitment to these values is unwavering. We acknowledge and recognise the wurundjeri woi-wurrung people of the Kulin Nation as the traditional custodians of the land upon which we live and work, and we pay our respects to their elders past, present and emerging.</p></div>
+          </div>
+          <div><p>ABN: 25 670 383 445</p></div>
+        </div>
+        <div class="bg-[#1a3765] mg w-full text-center ">Copyright © 2023, All rights reserved | Developed by Tech Pavilion.</div>
+      </div>
+      <!-- FOOTER END -->
+  
+  
+  
+  
+  
+  
+  
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+      <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+      <script src="contactForm.js"></script>
+      <script src="cards.js"></script>
+      <script src="script.js"></script>
+  
+  </body>
+  </html>
