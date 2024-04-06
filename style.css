@@ -372,6 +372,17 @@ hr{
   border: 1px solid white;
   width: 100%;
 }
+@media (max-width:800px) {
+  .cards-custom .card-anc{
+    width: 100%;
+    height: 60vh;
+
+  }
+  .card-img-top{
+    height:20vh;
+  }
+}
+
 /* CARD END  */
 
 

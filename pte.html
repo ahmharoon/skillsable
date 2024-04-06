@@ -16,33 +16,32 @@
 
 
   <!-- APPOINTMENT  -->
-  <div class="appointment-form overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center items-center fixed z-20 hidden">
-    <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
-      <div class="head-form flex justify-between px-10 py-5 items-center">
-        <h1 class="text-[20px]">Get in Touch </h1>
-        <div class="close-form"><i class="fa-solid fa-xmark" style="color: #284059;width: 20px;"></i></div>
-      </div>
-      <hr>
-      <div class="main-form p-[50px] pt-[30px]">
-        <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
-        <div class="flex my-2">
-          <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
-          <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
-        </div>
-        <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
-        <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
-        <button type="submit" class="btn btn-outline-danger">Submit</button>
-      </div>
-  
+<div class="appointment-form overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center items-center fixed z-20 hidden">
+  <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
+    <div class="head-form flex justify-between px-10 py-5 items-center">
+      <h1 class="text-[20px]">Get in Touch </h1>
+      <div class="close-form"><i class="fa-solid fa-xmark" style="color: #284059;width: 20px;"></i></div>
     </div>
+    <hr>
+    <div class="main-form p-[50px] pt-[30px]">
+      <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
+      <div class="flex my-2">
+        <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
+        <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
+      </div>
+      <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
+      <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
+      <button type="submit" class="btn btn-outline-danger">Submit</button>
+    </div>
+
   </div>
-  <!-- END APPOINTMENT -->
-  
-    
+</div>
+<!-- END APPOINTMENT -->
+
     <!-- LOADER -->
     <div class="loader w-full h-screen bg-[url('assets/loader.jpg')] bg-cover bg-bottom">
 
-        <div class="shadow w-full h-screen bg-black/[.95] gap-5 flex items-center justify-center flex-col relative">
+        <div class="shadow   w-full h-screen bg-black/[.95] gap-5 flex items-center justify-center flex-col relative">
             
             <div class="logo-anima flex mt-[25vw] md:mt-[0px] flex-col gap-5 justify-center items-center">
                 <div class="border-2 border-white/0 h-[76px] w-[43px]" >
@@ -92,11 +91,10 @@
     <!-- LOADER END -->
 
 
-
     <!-- NAVBAR START  -->
     <div class="nav-conatiner fixed z-[10] top-0 pt-[2vw] px-[5vw] w-full">
         <nav>
-            <div class="navbar">
+            <div class="navbar w-full">
               <i class='bx bx-menu'></i>
               <div class="logo"><a href="index.html">SKILLSABLE</a></div>
               <div class="nav-links">
@@ -140,112 +138,43 @@
     <!-- NAVBAR END  -->
 
 
-    <!-- HEADER  -->
-    
-    <div class="header p-[5vw] w-full bg-red-900 text-center">
-        <h1 class="text-[30px] mg text-white">Self Paced Learning</h1>
-    </div>
-    
-    <!-- HEADER END -->
-
-
-    <!-- MAIN  -->
-    <div class="main w-full p-[5vw] flex flex-col justify-center items-center bg-gray-100 gap-5">
-        <div class="intro text-center px-[5vw]">
-            <p>Self-paced learning is an educational approach that allows individuals to control the pace at which they acquire knowledge and skills. It offers several advantages for individuals seeking to acquire new knowledge or improve existing skills:</p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Flexibility</h1>
-        </div>
-        <div class="para">
-            <p>Self-paced learning allows individuals to choose when and where they want to study. This flexibility is particularly beneficial for people with busy schedules, such as working professionals or students with other commitments.</p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Personalized Learning</h1>
-        </div>
-        <div class="para">
-            <p>Individuals can tailor their learning experience to their specific needs and interests. They can focus on areas they find challenging and skip over material they already understand.</p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">No Pressure</h1>
-        </div>
-        <div class="para">
-            <p>Self-paced learning eliminates the pressure of keeping up with a fixed class schedule or meeting deadlines. Learners can take their time to grasp difficult concepts without the fear of falling behind.</p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Increased Retention</h1>
-        </div>
-        <div class="para">
-            <p>Learning at your own pace often leads to better retention of information. When you're not rushed, you can spend more time reviewing and reinforcing what you've learned</p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Reduced Anxiety</h1>
-        </div>
-        <div class="para">
-            <p>Some individuals may experience anxiety in traditional classroom settings. Self-paced learning reduces this anxiety, as there's no fear of public failure or judgment.
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Lifelong Learning</h1>
-        </div>
-        <div class="para">
-            <p>Self-paced learning is well-suited for lifelong learners who want to acquire new skills and knowledge throughout their lives. It accommodates people at all stages of life.
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Cost-Effective</h1>
-        </div>
-        <div class="para">
-            <p>In many cases, self-paced learning can be more cost-effective than traditional classroom-based education. You can often find free or low-cost online courses and resources.
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Accessible Resource</h1>
-        </div>
-        <div class="para">
-            <p>With the internet, a vast array of learning resources is readily available to individuals. This includes video lectures, ebooks, online courses, and interactive simulations.
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Improved Time Management</h1>
-        </div>
-        <div class="para">
-            <p>Self-paced learners often develop excellent time management skills as they must allocate their time efficiently to complete their learning goals.
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Higher Motivation</h1>
-        </div>
-        <div class="para">
-            <p>Self-motivated individuals often thrive in self-paced learning environments. They have a sense of ownership over their learning journey, which can boost motivation. 
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Skill Development</h1>
-        </div>
-        <div class="para">
-            <p>Self-paced learning can help individuals develop important skills such as self-discipline, self-regulation, and the ability to set and achieve goals. 
-            </p>
-        </div>
-        <div class="heading">
-            <h1 class="font-bold mg">Career Advancement</h1>
-        </div>
-        <div class="para">
-            <p>For working professionals, self-paced learning can be a powerful tool for career advancement. You can acquire new skills and certifications relevant to your field at your own pace.
-            </p>
-        </div>
-        <div class="outro text-center px-[5vw]">
-            <p>However, it's important to note that self-paced learning also comes with some challenges. It requires a high degree of self-discipline and self-motivation, and some individuals may struggle with procrastination or lack of structure. To make the most of self-paced learning, it's essential to set clear goals, create a study schedule, and stay accountable to yourself. Additionally, seeking out feedback and support from peers or mentors can help address any learning gaps and ensure a well-rounded education.</p>
+    <!-- ABOUT -->
+    <div class="about w-full bg-[url('assets/pte-header.jpg')] bg-cover bg-center">
+        <div class="ineer-about p-[5vw] w-full h-full bg-zinc-900/75">
+            <h1 class="text-[#fff] mg text-[30px]">ABOUT PTE COURSE</h1>
+            <p class="font-mono text-[#fff]">PTE, or the pearson test of English, is an academic English language exam that is computer-based and geared toward non-native English speakers who want to pursue studies overseas. It evaluates candidates’ reading, writing, speaking, and listening abilities. Questions frequently combine two skills for testing, such as speaking and reading or listening and reading.</p>
         </div>
     </div>
-    <!-- MAIN END -->
+    <!-- ABOUT END -->
+
+    <!-- WHY PTE  -->
+    <div class="why-pte w-full bg-gray-100 p-[5vw]">
+        <h1 class="text-center font-bold text-[30px] mg">Why PTE</h1>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>PTE, or the Pearson test of English, is an academic English language exam that is computer-based and geared toward non-native English speakers who want to pursue studies overseas. It evaluates candidates’ reading, writing, speaking, and listening abilities. Questions frequently combine two skills for testing, such as speaking and reading or listening and reading.</p>
+        <br>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>Many students take this test each year to realize their aspirations, but very few succeed. Skillsable has seasoned and diligent tutors who plan their training sessions following their understanding of the A-Z needs of such competitive assessments</p>
+        <br>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>At Skillsable, we strive to prepare every student for the PTE test adequately. We take pleasure in being one of the top PTE coaching and preparation centres with cutting-edge equipment. All of our instructors are professional trainers who assist and direct you at every turn while utilizing advanced training methods to guarantee a thorough increase in your ability to score.</p>
+    </div>
+    <!-- WHY PTE END -->
+
+    <!-- WHY US  -->
+    <div class="why-us w-full bg-[#fff] p-[5vw]">
+        <h1 class="mg text-[30px] text-[#7c1c16] text-center">Why Choose Us?</h1>
+        <img class="md:w-1/2 mx-auto m-5 rounded-md" src="assets/why-choose-us.jpg" alt="">
+        <p class="para-PTE text-center font-mono my-5">There is an easy solution. You’ve come to the perfect site if you’re looking to learn from tutors who have assisted more than 20000 students in achieving their targeted PTE, NAATI, And IELTS scores. Our tutors have the highest marks possible on all the exams to give you the best advice imaginable. Our greatest asset is our crew. They serve as the company’s guiding pillars and fuel its constant expansion. They are enthusiastic about what they do and think that by offering our customers good service, they can keep us going.</p>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>Skillsable has a long history of providing consulting services within the industry.</p>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>We discuss your involvement in education on a wide path with you and help you reach your long-term educational goals.</p>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>We provide advice and accessible enrolment administrations for a wide range of training positions, including those at universities, TAFEs, private colleges, and schools.</p>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>Compared to other education consultants, we provide more comprehensive information regarding programs and educational foundations in Australia.</p>
+        <p class="para-PTE"><span class=" text-orange-400 font-mono">&#9733; </span>We assist students in locating scholarships at their preferred institutions.</p>
+    </div>
+    <!-- WHY US END -->
 
 
 
 
     
-
-  
     <!-- SUPPORT -->
     <div class="card-2-bg w-full h-screen  fixed top-0 left-0 z-[-10000]">
         <img class="object-cover w-full h-screen" src="assets/for-contact.jpg" alt="">
@@ -292,20 +221,20 @@
   
   
   
-
   
-
   
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <script src="selflearn.js"></script>
-    <script src="skilltest.js"></script>
-    <script src="contactForm.js"></script>
-    <script src="script.js"></script>
-
-</body>
-</html>
+  
+  
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+      <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+      <script src="pte.js"></script>
+      <script src="contactForm.js"></script>
+      <script src="cards.js"></script>
+      <script src="script.js"></script>
+  
+  </body>
+  </html>
