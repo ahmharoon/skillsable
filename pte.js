@@ -3,7 +3,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Define animations for headings and paragraphs
-gsap.utils.toArray(' .para-PTE').forEach((element) => {
+gsap.utils.toArray('.para-PTE').forEach((element) => {
     gsap.from(element, {
         opacity: 0,
         x: '-100%',
