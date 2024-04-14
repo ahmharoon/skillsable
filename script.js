@@ -1,5 +1,6 @@
 // LOADER ANIMATION 
 
+
 function disableScroll() {
     document.body.style.overflow = 'hidden';
   }
@@ -16,18 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initially hide the triangles and logo text
     gsap.set('.triangle-1, .triangle-2', { autoAlpha: 0, scale: 0.5 });
     gsap.set('.logotext', { autoAlpha: 0 });
-    gsap.set('.logotext',{y:"-5vw"})
+    gsap.set('.logotext',{y:"-5vw"});
+    gsap.set('.nav-conatiner',{opacity:0,y:"-1000%"});
 
 
-    gsap.set('.help',{opacity:0,y:'-100%'})
+    // gsap.set('.help',{opacity:0,y:'-100%'})
 
 
 
     
-    const items = document.querySelectorAll('.contact > div');
+    // const items = document.querySelectorAll('.contact > div');
 
-    // Set the initial state of each item
-    gsap.set(items, {autoAlpha: 0, y: -50});
+    // // Set the initial state of each item
+    // gsap.set(items, {autoAlpha: 0, y: -50});
 
     // Animation for the triangles to appear and move to their position
     gsap.timeline({defaults: {duration: 1, ease: 'back.out(1.7)'}})
@@ -35,40 +37,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to reveal the logo text
     function showLogoText() {
-      gsap.to('.logotext', {duration: 0.5,autoAlpha:1, y:0, ease: 'power2.out',onComplete:showContact });
+      gsap.to('.logotext', {duration: 0.5,autoAlpha:1,opacity:1, y:0, ease: 'power2.out',onComplete:hideLoader });
     }
 
-    function showContact() {
+    // function showContact() {
         
 
-        // Create a timeline
-        const tl = gsap.timeline({
-        defaults: {duration: 0.5, ease: 'back.out(1.7)'},
-        });
+    //     // Create a timeline
+    //     const tl = gsap.timeline({
+    //     defaults: {duration: 0.5, ease: 'back.out(1.7)'},
+    //     });
 
-        // Add animations to the timeline for each item
-        items.forEach(item => {
-        tl.to(item, {autoAlpha: 1, y: 0,}, '+=0.1',); // Stagger the animation of each item
-        });
-    }
-    function showNav() {
-        gsap.from('.nav-conatiner',{
-            delay:2,
-            duration: 1,
-            y:"-1000%",
-           
-        })
-    };
-    showNav()
-    function showHelp() {
-        gsap.to('.help',{
-            delay:4,
-            duration: 0.5,
-            y:"0",
-            opacity:1,
-        })
-    }
-    showHelp()
+    //     // Add animations to the timeline for each item
+    //     items.forEach(item => {
+    //     tl.to(item, {autoAlpha: 1, y: 0,}, '+=0.1',); // Stagger the animation of each item
+    //     });
+    // }
+    function hideLoader() {
+      const tl = gsap.timeline(); // Corrected: Added parentheses after 'timeline'
+      const viewport = window.innerHeight
+      // window.scrollTo(0, viewport);
+      tl.to('.loader',{
+        y:"-100%",
+        duration:1,
+        ease: 'power2.out',
+      })
+      tl.to('.loader', {
+        display: "none",
+        onComplete:showNav
+      });
+      function showNav() {
+          gsap.to('.nav-conatiner',{
+              opacity:1,
+              duration: 1,
+              y:"0",
+             
+          })
+      };
+  }
+  
+    // function showHelp() {
+    //     gsap.to('.help',{
+    //         delay:4,
+    //         duration: 0.5,
+    //         y:"0",
+    //         opacity:1,
+    //     })
+    // }
+    // showHelp()
   });
 
 
