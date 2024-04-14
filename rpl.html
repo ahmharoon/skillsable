@@ -16,7 +16,8 @@
 
 
   <!-- APPOINTMENT  -->
-  <div class="appointment-form overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center items-center fixed z-20 hidden">
+  
+<div class="appointment-form overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center items-center fixed z-20 hidden">
     <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
       <div class="head-form flex justify-between px-10 py-5 items-center">
         <h1 class="text-[20px]">Get in Touch </h1>
@@ -24,14 +25,18 @@
       </div>
       <hr>
       <div class="main-form p-[50px] pt-[30px]">
-        <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
-        <div class="flex my-2">
-          <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
-          <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
-        </div>
-        <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
-        <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
-        <button type="submit" class="btn btn-outline-danger">Submit</button>
+       <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="1f4777f9-3fe0-440d-ac61-f80dcd75f03f">
+  
+          <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
+          <div class="flex my-2">
+            <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
+            <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
+          </div>
+          <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
+          <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
+          <button type="submit" class="btn btn-outline-danger">Submit</button>
+       </form>
       </div>
   
     </div>
@@ -160,166 +165,168 @@
 
     
   <!-- SKILL CHECK FORM  -->
-<div class="appointment-form-1 overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-20">
-    <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
-        <div class="popup flex flex-col justify-center items-center p-[5vw]" id="steps1">
-            <div class="head-form flex justify-between px-10 py-3 mb-5 text-[#fff] items-center w-full bg-red-900 rounded-lg ">
-                <h1 class="text-[20px]">Free Skill Check </h1>
-                <div class="close-form-0"><i class="fa-solid fa-xmark" style="color: #fff;width: 20px;"></i></div>
-            </div>
-            <div class="form-group" id="dropdown-group">
-                <label for="dropdown1">What Industry Is Your Experience In?</label>
-                <select class="form-control" id="dropdown1" required="">
-                    <option value="">Select an option</option>
-                    <option value="Automotive">Automotive</option>
-                    <option value="Building &amp; Construction">Building &amp; Construction</option>
-                    <option value="Business &amp; Finance">Business &amp; Finance</option>
-                    <option value="Civil Construction">Civil Construction</option>
-                    <option value="Community Services">Community Services</option>
-                    <option value="Commercial Cookery &amp; Hospitality">Commercial Cookery &amp; Hospitality</option>
-                </select>
-            </div>
-            <div class="form-group" id="dropdown-group">
-                <label for="dropdown2">What Qualification Are You Looking For?</label>
-                <select class="form-control" id="dropdown2" required="">
-                    <option value="">Select an option</option>
-                </select>
-            </div>
-            <button type="button" class="contact-btn-1 btn btn-outline-danger btn-lg">Next</button>
-        </div>
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="1f4777f9-3fe0-440d-ac61-f80dcd75f03f">
 
+    <div class="appointment-form-1 overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-20">
+        <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
+            <div class="popup flex flex-col justify-center items-center p-[5vw]" id="steps1">
+                <div class="head-form flex justify-between px-10 py-3 mb-5 text-[#fff] items-center w-full bg-red-900 rounded-lg ">
+                    <h1 class="text-[20px]">Free Skill Check </h1>
+                    <div class="close-form-0"><i class="fa-solid fa-xmark" style="color: #fff;width: 20px;"></i></div>
+                </div>
+                <div class="form-group" id="dropdown-group">
+                    <label for="dropdown1">What Industry Is Your Experience In?</label>
+                    <select class="form-control" id="Experience" name="Experience" required="">
+                        <option value="">Select an option</option>
+                        <option value="Automotive">Automotive</option>
+                        <option value="Building &amp; Construction">Building &amp; Construction</option>
+                        <option value="Business &amp; Finance">Business &amp; Finance</option>
+                        <option value="Civil Construction">Civil Construction</option>
+                        <option value="Community Services">Community Services</option>
+                        <option value="Commercial Cookery &amp; Hospitality">Commercial Cookery &amp; Hospitality</option>
+                    </select>
+                </div>
+                <div class="form-group" id="dropdown-group">
+                    <label for="Looking-for">What Qualification Are You Looking For?</label>
+                    <input type="text" class="form-control" id="Looking-for"name="Looking-for" required="">
+                </div>
+                <button type="button" class="contact-btn-1 btn btn-outline-danger btn-lg">Next</button>
+            </div>
+    
+        </div>
     </div>
-</div>
-
-
-<div class="appointment-form-2 overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-30">
-    <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
-        <div class="popup flex flex-col justify-center items-center p-[5vw]" id="steps1">
-            <div class="head-form flex justify-between px-10 py-3 mb-5 text-[#fff] items-center w-full bg-red-900 rounded-lg ">
-                <h1 class="text-[20px]">Free Skill Check </h1>
-                <div class="close-form-1"><i class="fa-solid fa-xmark" style="color: #fff;width: 20px;"></i></div>
-            </div>
-            <h5 class="font-bold mg">How Many Years Of Relevant Work Experience Do You Have?</h5>
-        <div class="row m-4">
-            <div class="col-md-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option1">
-                    <label class="form-check-label" for="option1">
-                        1-2 Years
-                    </label>
+    
+    
+    <div class="appointment-form-2 overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-30">
+        <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
+            <div class="popup flex flex-col justify-center items-center p-[5vw]" id="steps1">
+                <div class="head-form flex justify-between px-10 py-3 mb-5 text-[#fff] items-center w-full bg-red-900 rounded-lg ">
+                    <h1 class="text-[20px]">Free Skill Check </h1>
+                    <div class="close-form-1"><i class="fa-solid fa-xmark" style="color: #fff;width: 20px;"></i></div>
+                </div>
+                <h5 class="font-bold mg">How Many Years Of Relevant Work Experience Do You Have?</h5>
+            <div class="row m-4">
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" name="1-2 Years of Experience" type="checkbox" value="1-2 Years" id="1-2 Years">
+                        <label class="form-check-label" for="1-2 Years">
+                            1-2 Years
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="3-4 Years of Experience" value="3-4 Years" id="3-4 Years">
+                        <label class="form-check-label" for="3-4 Years">
+                            3-4 Years
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="5-9 Years of Experience" value="5-9 Years" id="5-9 Years">
+                        <label class="form-check-label" for="5-9 Years">
+                            5-9 Years
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="10+ Years of Experience" value="10+ Years" id="10+ Years">
+                        <label class="form-check-label" for="10+ Years">
+                            10+ Years
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option2">
-                    <label class="form-check-label" for="option2">
-                        3-4 Years
-                    </label>
+            <h5 class="font-bold mg">Where Is Your Work Experience?</h5>
+            <div class="row m-4">
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Work Experience in Australia" value="Australia" id="Australia">
+                        <label class="form-check-label" for="Australia">
+                            Australia
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Work Experience in Local" value="Local" id="Local">
+                        <label class="form-check-label" for="Local">
+                            Local
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="Work Experience in Both" value="Both" id="Both">
+                        <label class="form-check-label" for="Both">
+                            Both
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option3">
-                    <label class="form-check-label" for="option3">
-                        5-9 Years
-                    </label>
-                </div>
+            <div class="flex justify-center items-center gap-5">
+                <button type="button" class="previous-btn-1 btn btn-outline-danger btn-lg">Previous</button>
+                <button type="button" class="contact-btn-2 btn btn-outline-danger btn-lg">Next</button>
             </div>
-            <div class="col-md-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option4">
-                    <label class="form-check-label" for="option4">
-                        10+ Years
-                    </label>
-                </div>
             </div>
+    
         </div>
-        <h5 class="font-bold mg">Where Is Your Work Experience?</h5>
-        <div class="row m-4">
-            <div class="col-md-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option5">
-                    <label class="form-check-label" for="option5">
-                        Australia
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option6">
-                    <label class="form-check-label" for="option6">
-                        Local
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="option7">
-                    <label class="form-check-label" for="option7">
-                        Both
-                    </label>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center items-center gap-5">
-            <button type="button" class="previous-btn-1 btn btn-outline-danger btn-lg">Previous</button>
-            <button type="button" class="contact-btn-2 btn btn-outline-danger btn-lg">Next</button>
-        </div>
-        </div>
-
     </div>
-</div>
-  
-
-<div class="appointment-form-3 overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-40">
-    <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
-        <div class="popup flex flex-col justify-center items-center p-[2vw]" id="steps1">
-            <div class="head-form flex justify-between px-10 py-3 text-[#fff] items-center w-full bg-red-900 rounded-lg ">
-                <h1 class="text-[20px]">Free Skill Check </h1>
-                <div class="close-form-2"><i class="fa-solid fa-xmark" style="color: #fff;width: 20px;"></i></div>
+      
+    
+    <div class="appointment-form-3 overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center fixed z-40">
+        <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
+            <div class="popup flex flex-col justify-center items-center p-[2vw]" id="steps1">
+                <div class="head-form flex justify-between px-10 py-3 text-[#fff] items-center w-full bg-red-900 rounded-lg ">
+                    <h1 class="text-[20px]">Free Skill Check </h1>
+                    <div class="close-form-2"><i class="fa-solid fa-xmark" style="color: #fff;width: 20px;"></i></div>
+                </div>
+                    
+        <h5 class="font-bold mg m-2">Please Fill The Form</h5>
+        <form id="skill-form">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label1">First Name *</label>
+                    <input type="text" class="form-control" name="first-Name" id="firstName" required="">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label1">Last Name *</label>
+                    <input type="text" class="form-control" name="Last-Name" id="lastName" required="">
+                </div>
             </div>
-                
-    <h5 class="font-bold mg m-2">Please Fill The Form</h5>
-    <form id="skill-form">
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="firstName" class="form-label1">First Name *</label>
-                <input type="text" class="form-control" id="firstName" required="">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="phone" class="form-label1">Phone *</label>
+                    <input type="tel" class="form-control" name="Phone no:" id="phone" required="">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label1">Email *</label>
+                    <input type="email" class="form-control" name="Email" id="email" required="">
+                </div>
             </div>
-            <div class="col-md-6">
-                <label for="lastName" class="form-label1">Last Name *</label>
-                <input type="text" class="form-control" id="lastName" required="">
+            <div class="mb-3">
+                <label for="question" class="form-label1">Any Question</label>
+                <textarea class="form-control" id="question" name="Questions:" rows="3"></textarea>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="phone" class="form-label1">Phone *</label>
-                <input type="tel" class="form-control" id="phone" required="">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="agreeTerms" required="">
+                <label class="form-check-label2" for="agreeTerms">
+                    I agree with the <a class="underline" href="terms&amp;condition.html">Terms &amp; Conditions</a>
+                </label>
             </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label1">Email *</label>
-                <input type="email" class="form-control" id="email" required="">
+            <div class="flex justify-center items-center gap-5">
+                <button type="button" class="previous-btn-2 btn btn-outline-danger btn-lg">Previous</button>
+            <button type="submit" class=" btn btn-outline-danger btn-lg">Submit</button>
             </div>
+            </div>
+    
         </div>
-        <div class="mb-3">
-            <label for="question" class="form-label1">Any Question</label>
-            <textarea class="form-control" id="question" rows="3"></textarea>
-        </div>
-        <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="agreeTerms" required="">
-            <label class="form-check-label2" for="agreeTerms">
-                I agree with the <a class="underline" href="terms&amp;condition.html">Terms &amp; Conditions</a>
-            </label>
-        </div>
-        <div class="flex justify-center items-center gap-5">
-            <button type="button" class="previous-btn-2 btn btn-outline-danger btn-lg">Previous</button>
-        <button type="submit" class=" btn btn-outline-danger btn-lg">Submit</button>
-        </div>
-        </div>
-
     </div>
-</div>
-
+    
+</form>
   
   
   <!-- END SKILL CHECK FORM -->
