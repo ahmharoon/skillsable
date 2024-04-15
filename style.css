@@ -1,10 +1,10 @@
 @font-face {
     font-family: MG;
-    src: url(../fonts/MGserif.otf);
+    src: url(../fonts/MGserif.woff2);
 }
 @font-face {
     font-family: myriad;
-    src: url(../fonts/MyriadProBlack.otf);
+    src: url(../fonts/MyriadProBlack.woff2);
 }
 .mg{
     font-family: MG;
