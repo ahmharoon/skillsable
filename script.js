@@ -103,13 +103,26 @@ card_anc.forEach((card, index) => {
 
 });
 
-gsap.from('.right-side-form',{
-  x:"200%",
+gsap.from('.index-col-1',{
+  y:"100%",
   duration:1,
+  opacity:0,
   power:"ease-in",
   scrollTrigger: {
-    trigger: '.container-support',
-    start: '40% 80%',
+    trigger: 'card-2',
+    start: '25% 50%',
+    
+  }
+})
+
+gsap.from('.index-col-2',{
+  y:"-100%",
+  duration:1,
+  opacity:0,
+  power:"ease-in",
+  scrollTrigger: {
+    trigger: 'card-2',
+    start: '25% 50%',
     
   }
 })

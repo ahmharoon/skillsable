@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -9,15 +10,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
 
-  <!-- APPOINTMENT  -->
-
-<!-- END APPOINTMENT -->
 
     <!-- LOADER -->
     <div class="loader absolute top-0 left-0 z-[100] w-full h-screen bg-[url('assets/loader.webp')] bg-cover bg-bottom">
@@ -41,32 +38,6 @@
                     <h1 class="logotext font-sans font-bold text-[30px]" >SKILLSABLE</h1>
                 </div>
             </div>
-<!--             
-            <div class="contact flex w-[75%] gap-5 overflow-hidden">
-                <div class="phone flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
-                    <div class="icon"><i class="fa-solid fa-phone" style="color: #7c1c16;"></i></div>
-                    <div class="info mg">Contact Us : </div>
-                    <div>0420 681 181</div>
-                </div>
-                <div class="mail flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
-                    <div class="icon"><i class="fa-solid fa-envelope" style="color: #7c1c16;"></i></div>
-                    <div class="info mg">Email Us : </div>
-                    <div>info@skillsable.com.au</div>
-                </div>
-                <div class="location flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
-                    <div class="icon"><i class="fa-solid fa-location-dot" style="color: #7c1c16;"></i></div>
-                    <div class="info mg">Location:</div>
-                    <div class="text-center"> Level 14 333 Collins Street, Melbourne VIC, 3000</div>
-                </div>
-            </div>
-            <div class="help w-9/12 flex justify-center flex-col items-center rounded-md bg-[#1a3765]">
-                <div class="help-txt mg">Let our passionate team assist you</div>
-                <div class="links flex items-center gap-5 justify-center">
-                    <div class="l1 "><a href="https://www.facebook.com/skillsableptyltd"><i class="help-icons text-[30px] fa-brands fa-square-facebook"></i></a></div>
-                    <div class="l1"><a href="https://www.instagram.com/skillsableptyltd/"><i class="help-icons text-[30px] fa-brands fa-square-instagram"></i></a></div>
-                    <div class="l1"><a href="https://www.linkedin.com/company/skillsable"><i class="help-icons text-[30px] fa-brands fa-linkedin"></i></a></div>
-                </div>
-            </div> -->
         </div>
     </div>
     <!-- LOADER END -->
@@ -163,9 +134,9 @@
     <!-- END CAROUSEL  -->
 
     <!-- CARDS  -->
-    <div class="cards-custom w-full min-h-screen flex gap-5 px-[10vw] py-[5vw] items-center justify-evenly bg-[#7c1c16]">
-        <div class="card-anc w-1/3 h-[80vh] ">
-          <a href="pte.html" class="  w-1/3 h-[80vh]">
+    <div class="cards-custom w-full min-h-screen flex gap-5 px-[10vw] py-[5vw] items-center justify-evenly bg-[#fff]">
+        <div class="card-anc w-1/3 h-[80vh] shadow-lg">
+          <a href="pte.html" style="text-decoration: none;color: black;" class="  w-1/3 h-[80vh]">
             <div class="card h-full" >
                <div  class=" h-[50%] overflow-hidden">
                 <img class="card-img-top h-full object-cover" src="assets/card-3s.webp" alt="Card image cap">
@@ -177,8 +148,8 @@
               </div>
         </a>
         </div>
-        <div class="card-anc w-1/3 h-[80vh] ">
-          <a href="naati.html" class=" w-1/3 h-[80vh] ">
+        <div class="card-anc w-1/3 h-[80vh] shadow-lg">
+          <a href="naati.html" style="text-decoration: none;color: black;" class=" w-1/3 h-[80vh] ">
             <div class="card h-full" >
                 <div  class=" h-[50%] overflow-hidden">
                   <img class="card-img-top h-full object-cover" src="assets/slide-2.webp" alt="Card image cap">
@@ -190,15 +161,15 @@
               </div>
         </a>
         </div>
-        <div class="card-anc w-1/3 h-[80vh] ">
-          <a href="ielts.html" class=" w-1/3 h-[80vh] ">
+        <div class="card-anc w-1/3 h-[80vh] shadow-lg">
+          <a href="ielts.html" style="text-decoration: none;color: black;" class=" w-1/3 h-[80vh] ">
             <div class="card h-full" >
                 <div class=" h-[50%] overflow-hidden">
                   <img class="card-img-top object-cover h-full" src="assets/slide-3.webp" alt="Card image cap">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title font-bold mg">IELTS Prepration</h5>
-                  <p class="card-text">TIELTS Academic – is designed to measure your English language proficiency and to assess if it is suitable for an academic environment. The test reflects aspects of academic language and evaluates whether you're ready to begin training or studying in English.</p>
+                  <p class="card-text">IELTS Academic – is designed to measure your English language proficiency and to assess if it is suitable for an academic environment. The test reflects aspects of academic language and evaluates whether you're ready to begin training or studying in English.</p>
                 </div>
               </div>
         </a>
@@ -207,30 +178,49 @@
     <!-- END CARDS  -->
 
     <!-- CARD-2  -->
-    <div class="card-2 w-full min-h-[50vh] text-white mg p-10 bg-[#fff]">
-      <div class="bg-[#1a3765] w-full h-full flex gap-5 flex-col items-center text-[30px] rounded-md p-5 shadow-lg">
-        <a href="pta.html"><div class="inerr-card-2 flex gap-5 items-center"><i class="fa-solid fa-mobile-retro" style="color: #7c1c16;"></i><h1 class="mg">Professional Development</h1></div></a>
-        <hr>
-        <a href="admission.html"><div class="inerr-card-2 flex gap-5 items-center"><i class="fa-solid fa-bag-shopping" style="color: #7c1c16;"></i><h1 class="mg">
-          <h1 class="mg">Addmissions
-            <span class="typer" id="main"  data-words="PTE,NAATI,IELTS" data-delay="100" data-deleteDelay="1000" data-colors="white"></span>
-            <span class="cursor" data-owner="main"></span>
-          </h1>
-        </h1></div></a>
-        <hr>
-        <a href="resume-assistance.html"><div class="inerr-card-2 flex gap-5 items-center"><i class="fa-solid fa-pencil" style="color: #7c1c16;"></i><h1 class="mg">Resume Assistance</h1></div>
-        </a>
-        <hr>
-        <a href="job-assistance.html"><div class="inerr-card-2 flex gap-5 items-center"><i class="fa-solid fa-desktop" style="color: #7c1c16;"></i><h1 class="mg">Job Assistance</h1></div></a>
+
+    <div class="card-2  w-full text-white mg p-10 bg-white">
+      <div class="mx-auto w-full flex gap-5">
+        <div class="index-col-1 w-1/2 flex md:flex-col gap-5">
+          <div class="card-n h-[50%] md:h-[60%] grow bg-[url('assets/professionaldevelopment.webp')] bg-cover bg-center ">
+            <div class="rotate-rpl flex flex-col justify-center items-center grow bg-[#000]/75 text-[#fff] p-[2vw] text-center rotate-y-90 hover:rotate-y-[-90deg] w-full h-full">
+                <h1 class="mg">Professional Development</h1>
+                <button class="btn btn-outline-danger"><a href="rpl.html">Find More</a></button>
+            </div>
+          </div>
+          <div class="card-n h-[50%] md:h-[40%] grow bg-[url('assets/Resume-Assessment.webp')] bg-cover bg-center ">
+            <div class="rotate-rpl flex flex-col justify-center items-center grow bg-[#000]/75 text-[#fff] p-[2vw] text-center rotate-y-90 hover:rotate-y-[-90deg] w-full h-full">
+                <h1 class="mg">Resume Assistance</h1>
+                <button class="btn btn-outline-danger"><a href="resume-assistance.html">Find More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="index-col-2 w-1/2 flex md:flex-col gap-5">
+          <div class="card-n h-[50%] md:h-[40%] grow bg-[url('assets/admissions.webp')] bg-cover bg-center ">
+            <div class="rotate-rpl flex flex-col justify-center items-center grow bg-[#000]/75 text-[#fff] p-[2vw] text-center rotate-y-90 hover:rotate-y-[-90deg] w-full h-full">
+                <h1 class="mg">Admissions</h1>
+                <button class="btn btn-outline-danger"><a href="admissions.html">Find More</a></button>
+            </div>
+          </div>
+          <div class="card-n h-[50%] md:h-[60%] grow bg-[url('assets/jobassistance.webp')] bg-cover bg-center ">
+            <div class="rotate-rpl flex flex-col justify-center items-center grow bg-[#000]/75 text-[#fff] p-[2vw] text-center rotate-y-90 hover:rotate-y-[-90deg] w-full h-full">
+                <h1 class="mg">Job Assistance</h1>
+                <button class="btn btn-outline-danger"><a href="job-assistance.html">Find More</a></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+
+
     <!-- CARD-2  END  -->
 
 
     <!-- MISSION -->
 
     <div class="mission overflow-hidden flex items-center justify-center w-full p-[5vw] bg-[#fff] text-[#fff] bg-[url('assets/ourmission.jpg')] bg-cover bg-center">
-      <div class="left w-full bg-red-900 rounded-md p-[2vw] shadow-lg md:w-1/2">
+      <div class="left w-full bg-white text-black rounded-md p-[2vw] shadow-lg md:w-1/2">
         <h1 class="mg text-[40px]">Our Mission:</h1>
         <h1 class=" leading-10 font-sans text-[20px] font-light">We strive to prepare all students to become lifelong learners and responsible citizens ready to meet the challenges of the future. <br>Our Mission is to provide high quality education in a safe, respectful and inclusive environment that builds a foundation for life-long learning.
         </h1>
@@ -282,83 +272,37 @@
 
     <div class="container-support w-full  mx-auto overflow-hidden my-4 px-4 lg:px-20">
 
-      <div class="left-side-form w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+      <form action="https://api.web3forms.com/submit" method="POST" class="left-side-form w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-20 mx-auto rounded-2xl shadow-2xl">
         <div class="flex">
           <h1 class="font-bold uppercase text-5xl">Send us a <br /> message</h1>
         </div>
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+          <!-- <form action="https://api.web3forms.com/submit" method="POST"> -->
+            <!-- <input type="hidden" name="access_key" value="c23c0753-89a1-4651-befe-93a3a5348800"> -->
+            <input type="hidden" name="access_key" value="c23c0753-89a1-4651-befe-93a3a5348800">
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              name="First_Name" type="text" placeholder="First Name*" />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="First Name*" />
+              name="Last_Name" type="text" placeholder="Last Name*" />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="Last Name*" />
+              name="Email" type="email" placeholder="Email*" />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="email" placeholder="Email*" />
-          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="number" placeholder="Phone*" />
-          </div>
-          <div class="my-4">
-            <textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-          </div>
-          <div class="my-2 w-1/2 lg:w-1/4">
-            <button class="uppercase text-sm font-bold tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-full 
-                        focus:outline-none focus:shadow-outline">
-              Send Message
-            </button>
-          </div>
+              name="Phone" type="number" placeholder="Phone*" />
         </div>
-  
-        <div
-          class="right-side-form w-full lg:-mt-[450px] lg:w-2/6 px-8 py-2 ml-auto bg-red-900 rounded-2xl">
-          <div class="flex flex-col text-white">
-            <h1 class="font-bold uppercase text-4xl my-4">Drop in our office</h1>
-            
-  
-            <div class="flex my-4 w-2/3 lg:w-1/2">
-              <div class="flex">
-                <i class="fas fa-map-marker-alt pt-2 pr-2" ></i>
-              </div>
-              <div class="flex flex-col">
-                <h2 class="text-2xl">Main Office</h2>
-                <p class="text-gray-400">Level 14 333 Collins Street, Melbourne VIC, 3000</p>
-              </div>
-            </div>
-            
-            <div class="flex my-4 w-2/3 lg:w-1/2">
-              <div class="flex flex-col">
-                <i class="fas fa-phone-alt pt-2 pr-2" ></i>
-              </div>
-              <div class="flex flex-col">
-                <h2 class="text-2xl">Call Us</h2>
-                <p class="text-gray-400">Tel: 0420 681 181</p>
-                <p class="text-gray-400">Emial: info@skillsable.com.au</p>
-              </div>
-            </div>
-            
-            <div class="flex my-4 w-2/3 lg:w-1/2">
-              <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" class="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1">
-                <i class="fab fa-facebook-f text-blue-900" ></i>
-              </a>
-              <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer" class="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1">
-                <i class="fab fa-linkedin-in text-blue-900" ></i>
-              </a>
-            </div>
-          </div>
+        <div class="my-4">
+          <textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="Message"></textarea>
         </div>
+        <div class="my-2 w-1/2 lg:w-1/4">
+          <button type="submit" class="uppercase text-sm font-bold tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-full 
+                      focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </div>
+          <!-- </form> -->
+      </form>
+  
       </div>
 
-
-
-
-
-
-    
-    <div class="card-2-bg w-full h-screen  fixed top-0 left-0 z-[-10000]">
-      <img class="object-cover w-full h-screen" src="assets/for-contact.webp" alt="">
-    </div>
-    <!-- <div class="support-container w-full h-[50vh] flex flex-col justify-center items-center">
-      <h1 class="mg text-[40px] text-red-900 text-center font-bold">Do you need support?</h1>
-      <button type="button" class="contact-btn btn btn-outline-danger">Contact us</button>
-    </div> -->
     <!-- SUPPORT END --> 
 
     <!-- FOOTER  -->

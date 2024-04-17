@@ -15,137 +15,84 @@
 
 
 
-  <!-- APPOINTMENT  -->
-
-  <div class="appointment-form overflow-hidden p-10 w-full h-screen bg-black/75 flex top-[-100%] justify-center items-center fixed z-20 hidden">
-    <div class="app-form w-full md:w-2/5 h-[80%] md:h-full rounded-lg  bg-gray-300">
-      <div class="head-form flex justify-between px-10 py-5 items-center">
-        <h1 class="text-[20px]">Get in Touch </h1>
-        <div class="close-form"><i class="fa-solid fa-xmark" style="color: #284059;width: 20px;"></i></div>
-      </div>
-      <hr>
-      <div class="main-form p-[50px] pt-[30px]">
-       <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="c23c0753-89a1-4651-befe-93a3a5348800">
-  
-          <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="name" placeholder="Name" id="name">
-          <div class="flex my-2">
-            <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none me-2" type="email" name="email" placeholder="Email" id="Email">
-            <input class="w-1/2 my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none ms-2" type="number" name="phone" placeholder="Phone no." id="phone">
-          </div>
-          <input class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md h-[35px] p-2 focus:bg-white focus:outline-none" type="text" name="subject" placeholder="Subject" id="subject">
-          <textarea class="w-full my-2 bg-gray-300 border-2 border-red-900 rounded-md p-2 focus:bg-white focus:outline-none h-[150px]" name="msg" id="msg" cols="30" rows="6" placeholder="Enter your message"></textarea>
-          <button type="submit" class="btn btn-outline-danger">Submit</button>
-       </form>
-      </div>
-  
-    </div>
-  </div>
-<!-- END APPOINTMENT -->
 
     <!-- LOADER -->
-    <div class="loader w-full h-screen bg-[url('assets/loader.webp')] bg-cover bg-bottom">
+    <div class="loader absolute top-0 left-0 z-[100] w-full h-screen bg-[url('assets/loader.webp')] bg-cover bg-bottom">
 
-        <div class="shadow   w-full h-screen bg-black/[.95] gap-5 flex items-center justify-center flex-col relative">
-            
-            <div class="logo-anima flex mt-[25vw] md:mt-[0px] flex-col gap-5 justify-center items-center">
-                <div class="border-2 border-white/0 h-[76px] w-[43px]" >
-                    <div class="tris relative w-full h-full">
-                        <div class="absolute right-[-4.65%] top-[3.95%] border-b-[#7c1c16] triangle-1"></div>
-                        <div class="absolute left-[-4.65%] top-[3.95%] border-b-[#a71c22] triangle-2"></div>
-                        <div class="absolute left-[-4.65%] top-[19.74%] border-b-[#d31f26] triangle-1"></div>
-                        <div class="absolute left-[-4.65%] top-[36%] border-b-[#d31f26] triangle-2"></div>
-                        <div class="absolute right-[-4.65%] top-[36%] border-b-[#f26279] triangle-1"></div>
-                        <div class="absolute right-[-4.65%] bottom-[20%] border-b-[#f26279] triangle-2"></div>
-                        <div class="absolute right-[-4.65%] bottom-[3.95%] border-b-[#f795a6] triangle-1"></div>
-                        <div class="absolute left-[-4.65%] bottom-[3.95%] border-b-[#fcbbd5] triangle-2"></div>
-                    </div>
-                </div>
-                <div class="logotxt-container overflow-hidden">
-                    <h1 class=" logotext" >SKILLSABLE</h1>
-                </div>
-            </div>
-            
-            <div class="contact flex w-[75%] gap-5 overflow-hidden">
-                <div class="phone flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
-                    <div class="icon"><i class="fa-solid fa-phone" style="color: #7c1c16;"></i></div>
-                    <div class="info mg">Contact Us : </div>
-                    <div>0420 681 181</div>
-                </div>
-                <div class="mail flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
-                    <div class="icon"><i class="fa-solid fa-envelope" style="color: #7c1c16;"></i></div>
-                    <div class="info mg">Email Us : </div>
-                    <div>info@skillsable.com.au</div>
-                </div>
-                <div class="location flex flex-col items-center justify-center w-1/3 bg-[#1a3765] rounded-md py-[3vh]">
-                    <div class="icon"><i class="fa-solid fa-location-dot" style="color: #7c1c16;"></i></div>
-                    <div class="info mg">Location:</div>
-                    <div class="text-center"> Level 14 333 Collins Street, Melbourne VIC, 3000</div>
-                </div>
-            </div>
-            <div class="help w-9/12 flex justify-center flex-col items-center rounded-md bg-[#1a3765]">
-                <div class="help-txt mg">Let our passionate team assist you</div>
-                <div class="links flex items-center gap-5 justify-center">
-                    <div class="l1 "><a href="https://www.facebook.com/skillsableptyltd"><i class="help-icons text-[30px] fa-brands fa-square-facebook"></i></a></div>
-                    <div class="l1"><a href="https://www.instagram.com/skillsableptyltd/"><i class="help-icons text-[30px] fa-brands fa-square-instagram"></i></a></div>
-                    <div class="l1"><a href="https://www.linkedin.com/company/skillsable"><i class="help-icons text-[30px] fa-brands fa-linkedin"></i></a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- LOADER END -->
-
-
-    <!-- NAVBAR START  -->
-    <div class="nav-conatiner fixed z-[10] top-0 pt-[2vw] px-[5vw] w-full">
-        <nav>
-            <div class="navbar w-full">
-              <i class='bx bx-menu'></i>
-              <div class="logo"><a href="index.html">SKILLSABLE</a></div>
-              <div class="nav-links">
-                <div class="sidebar-logo">
-                  <span class="logo-name">SKILLSABLE</span>
-                  <i class='bx bx-x' ></i>
-                </div>
-                <ul class="links">
-                  <li><a href="index.html">HOME</a></li>
-                  <li>
-                    <a href="#">Professional Development</a>
-                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-                    <ul class="htmlCss-sub-menu sub-menu">
-                      <li><a href="rpl.html">Recognition of Prior Learning RPL</a></li>
-                      <li><a href="self-learning.html">Self paced Learning</a></li>
-                      <li><a href="online-learning.html">Online Learning</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Other Services</a>
-                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
-                    <ul class="js-sub-menu sub-menu">
-                      <li><a href="pte.html">PTE</a></li>
-                      <li><a href="naati.html">NAATI</a></li>
-                      <li><a href="ielts.html">IELTS</a></li>
-                      <li><a href="resume-assistance.html">Resume Assistance</a></li>
-                      <li><a href="job-assistance.html">Job Assistance</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="ndis.html">NDIS Training</a></li>
-                  <li><a href="admissions.html">Addmissions</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="blogs.html">Blogs</a></li>
-                </ul>
+      <div class="shadow   w-full h-screen bg-white/[.75] gap-5 flex items-center justify-center flex-col relative">
+          
+          <div class="logo-anima flex mt-[25vw] md:mt-[0px] flex-col gap-5 justify-center items-center">
+              <div class="border-2 border-white/0 h-[76px] w-[43px]" >
+                  <div class="tris relative w-full h-full">
+                      <div class="absolute right-[-4.65%] top-[3.95%] border-b-[#7c1c16] triangle-1"></div>
+                      <div class="absolute left-[-4.65%] top-[3.95%] border-b-[#a71c22] triangle-2"></div>
+                      <div class="absolute left-[-4.65%] top-[19.74%] border-b-[#d31f26] triangle-1"></div>
+                      <div class="absolute left-[-4.65%] top-[36%] border-b-[#d31f26] triangle-2"></div>
+                      <div class="absolute right-[-4.65%] top-[36%] border-b-[#f26279] triangle-1"></div>
+                      <div class="absolute right-[-4.65%] bottom-[20%] border-b-[#f26279] triangle-2"></div>
+                      <div class="absolute right-[-4.65%] bottom-[3.95%] border-b-[#f795a6] triangle-1"></div>
+                      <div class="absolute left-[-4.65%] bottom-[3.95%] border-b-[#fcbbd5] triangle-2"></div>
+                  </div>
               </div>
+              <div class="logotxt-container overflow-hidden">
+                  <h1 class="logotext font-sans font-bold text-[30px]" >SKILLSABLE</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- LOADER END -->
+
+
+  <!-- NAVBAR START  -->
+  <div class="nav-conatiner fixed z-[101] top-0 pt-[2vw] px-[5vw] w-full">
+      <nav>
+          <div class="navbar w-full">
+            <i class='bx bx-menu'></i>
+            <div class="logo bg-white h-full hover:bg-zinc-900"><a  href="index.html"><img class="mx-auto mt-1 w-[80%] object-cover" src="assets/Logo250x150.png" alt=""></a></div>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <span class="logo-name">SKILLSABLE</span>
+                <i class='bx bx-x' ></i>
+              </div>
+              <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li>
+                  <a href="#">Professional Development</a>
+                  <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="rpl.html">Recognition of Prior Learning RPL</a></li>
+                    <li><a href="self-learning.html">Self paced Learning</a></li>
+                    <li><a href="online-learning.html">Online Learning</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Other Services</a>
+                  <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                  <ul class="js-sub-menu sub-menu">
+                    <li><a href="pte.html">PTE</a></li>
+                    <li><a href="naati.html">NAATI</a></li>
+                    <li><a href="ielts.html">IELTS</a></li>
+                    <li><a href="resume-assistance.html">Resume Assistance</a></li>
+                    <li><a href="job-assistance.html">Job Assistance</a></li>
+                  </ul>
+                </li>
+                <li><a href="ndis.html">NDIS Training</a></li>
+                <li><a href="admissions.html">Addmissions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
 
-    </div>
+  </div>
 
-    <!-- NAVBAR END  -->
+  <!-- NAVBAR END  -->
 
 
     <!-- ABOUT -->
     <div class="about w-full bg-[url('assets/pte-header.webp')] bg-cover bg-center">
-        <div class="ineer-about p-[5vw] w-full h-full bg-zinc-900/75">
+        <div class="ineer-about p-[5vw] pt-[10vw] w-full h-full bg-zinc-900/75">
             <h1 class="text-[#fff] mg text-[30px]">ABOUT NAATI-CCL COURSE</h1>
             <p class="font-mono text-[#fff]">The setting, testing, maintaining, and certifying of translators and interpreters in Australia is the responsibility of the national accreditation authority for translators and interpreters Ltd, or NAATI. A certification that evaluates your language proficiency at the community level is the CCL (credentialed community language) test. The CCL test measures a person’s capacity to translate conversations from english to other language. Numerous dutch, Filipino, Indonesian, Vietnamese, Thai, Russian, Tamil, Persian, Sinhalese, Polish, and Nepali languages are available for CCL testing through NAATI.
             </p>
@@ -188,50 +135,108 @@
 
     
     <!-- SUPPORT -->
-    <div class="card-2-bg w-full h-screen  fixed top-0 left-0 z-[-10000]">
-        <img class="object-cover w-full h-screen" src="assets/for-contact.webp" alt="">
-      </div>
-      <div class="support-container w-full h-[50vh] flex flex-col justify-center items-center">
-        <h1 class="mg text-[40px] text-red-900 text-center">Do you need support?</h1>
-        <button type="button" class="contact-btn btn btn-outline-danger">Contact us</button>
-      </div>
-      <!-- SUPPORT END --> 
-  
-      <!-- FOOTER  -->
-      <div class="footer-container flex flex-col  bg-red-900 justify-center items-center text-[#fff] min-h-screen w-full">
-        <div class="flex flex-col p-[5vw] bg-red-900 justify-center items-center text-[#fff] mb-[3vw]">
-          <div class="container-1 flex gap-5 w-full flex-wrap">
-            <div class="left-footer grow flex flex-col justify-center items-center">
-              <h1 class="mg text-[40px]">Contact Info</h1>
-              <hr>
-              <p>0420 681 181</p>
-              <p>Email: info@skillsable.com.au</p>
-              <p>Level 14 333 Collins Street, Melbourne VIC, 3000</p>
-            </div>
-            <div class="rigth-footer grow flex flex-col justify-center items-center">
-              <h1 class="mg text-[40px]">Quick Links</h1>
-              <hr>
-              <a href="privacy_policy.html">Privacy Policy</a>
-              <a href="terms&condition.html">Term & Conditions</a>
-              <a href="client_service_agreement.html">Client Service Agreement</a>
-            </div>
-          </div>
-          <div class="container-2 flex flex-col justify-center items-center gap-5 mb-5">
-            <h1 class="mg text-[40px] text-center">For Quick Response</h1>
-            <a href="https://wa.me/61420681181?text=Hello..!%20Welcome%20to%20Skillsable%20How%20can%20we%20help%20you."><img class="w-[50px] h-[50px]" src="/assets/whatsApp-img.png" alt=""></a>
-          </div>
-          <div class="container-3 flex justify-center items-center flex-wrap gap-5">
-            <div class="flag-1w-[50px] h-[50px]"><img class="w-[50px] h-[50px]" src="assets/flag-1.webp" alt=""></div>
-            <div class="flag-2w-[50px] h-[50px]"><img class="w-[50px] h-[50px]" src="assets/flag-2.webp" alt=""></div>
-            <div><p class="font-mono">At Skillsable, diversity, equity and inclusion are at the core of who we are. Our commitment to these values is unwavering. We acknowledge and recognise the wurundjeri woi-wurrung people of the Kulin Nation as the traditional custodians of the land upon which we live and work, and we pay our respects to their elders past, present and emerging.</p></div>
-          </div>
-          <div><p>ABN: 25 670 383 445</p></div>
+
+    <div class="container-support w-full  mx-auto overflow-hidden my-4 px-4 lg:px-20">
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="left-side-form w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-20 mx-auto rounded-2xl shadow-2xl">
+        <div class="flex">
+          <h1 class="font-bold uppercase text-5xl">Send us a <br /> message</h1>
         </div>
-        <div class="bg-[#1a3765] mg w-full text-center ">Copyright © 2023, All rights reserved | Developed by Tech Pavilion.</div>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+          <!-- <form action="https://api.web3forms.com/submit" method="POST"> -->
+            <!-- <input type="hidden" name="access_key" value="c23c0753-89a1-4651-befe-93a3a5348800"> -->
+            <input type="hidden" name="access_key" value="c23c0753-89a1-4651-befe-93a3a5348800">
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              name="First_Name" type="text" placeholder="First Name*" />
+          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              name="Last_Name" type="text" placeholder="Last Name*" />
+          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              name="Email" type="email" placeholder="Email*" />
+          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              name="Phone" type="number" placeholder="Phone*" />
+        </div>
+        <div class="my-4">
+          <textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="Message"></textarea>
+        </div>
+        <div class="my-2 w-1/2 lg:w-1/4">
+          <button type="submit" class="uppercase text-sm font-bold tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-full 
+                      focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </div>
+          <!-- </form> -->
+      </form>
+  
       </div>
-      <!-- FOOTER END -->
-  
-  
+
+    <!-- SUPPORT END --> 
+
+    <!-- FOOTER  -->
+    <div class="relative bg-white w-full flex items-center h-auto p-[2vw] justify-center">
+
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <div class="flex flex-col gap-3">
+              <h4><a href="index.html"><img src="assets/Logo250x150.png" width="220px"  alt=""></a></h4>
+            <div class="flex gap-5">
+              <img src="assets/flag-1.webp" width="70px" alt="">
+              <img src="assets/flag-2.webp" width="70px" alt="">
+            </div>
+            <div class="w-[300px]  text-white text-[12px]">
+              At Skillsable, diversity, equity and inclusion are at the core of who we are. Our commitment to these values is unwavering. We acknowledge and recognise the wurundjeri woi-wurrung people of the Kulin Nation as the traditional custodians of the land upon which we live and work, and we pay our respects to their elders past, present and emerging.
+            </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="links">
+              <li><a href="#">0420 681 181</a></li>
+              <li><a href="#">Email: info@skillsable.com.au</a></li>
+              <li><a href="#">Level 14 333 Collins Street, Melbourne VIC, 3000</a></li>
+            </ul>
+            <h4>For Quick Response</h4>
+            <ul class="links">
+              <li><a href="https://api.whatsapp.com/send/?phone=61420681181&text=Hello..%21+Welcome+to+Skillsable+How+can+we+help+you.&type=phone_number&app_absent=0"><img src="assets/whatsApp-img.webp" alt=""></a></li>
+            </ul>
+            
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Client Service Agreement</a></li>
+            </ul> 
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+
+
+    <!-- FOOTER END -->
+
   
   
   
