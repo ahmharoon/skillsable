@@ -283,14 +283,14 @@
             <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               name="First_Name" type="text" placeholder="First Name*" />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              name="Last_Name" type="text" placeholder="Last Name*" />
+              name="Last_Name" type="text" placeholder="Last Name*" required/>
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              name="Email" type="email" placeholder="Email*" />
+              name="Email" type="email" placeholder="Email*" required/>
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              name="Phone" type="number" placeholder="Phone*" />
+              name="Phone" type="number" placeholder="Phone*" required/>
         </div>
         <div class="my-4">
-          <textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="Message"></textarea>
+          <textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="Message" required></textarea>
         </div>
         <div class="my-2 w-1/2 lg:w-1/4">
           <button type="submit" class="uppercase text-sm font-bold tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-full 
@@ -350,7 +350,7 @@
               of news, updates, helpful tips, and
               exclusive offers.
             </p>
-            <form action="#">
+            <form action="#" class="flex 2xl:flex-row flex-col gap-3">
               <input type="text" placeholder="Your email" required>
               <button type="submit">SUBSCRIBE</button>
             </form>
@@ -385,7 +385,7 @@
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script src="contactForm.js"></script>
     <script src="cards.js"></script>
-    <script src="script.js" defer></script>
+    <script defer src="script.js" ></script>
 
 </body>
 </html>

@@ -10,6 +10,8 @@ function enableScroll() {
     document.body.style.overflow = '';
   }
 
+  
+
 
 document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);

@@ -515,7 +515,6 @@ width: 110%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3.5rem;
   padding: 60px;
 }
 .footer-row .footer-col h4 {
@@ -525,6 +524,7 @@ width: 110%;
 }
 .footer-col{
   flex-basis: 200px;
+  flex-grow: 1;
 }
 .footer-col .links {
   margin-top: 20px;
@@ -544,11 +544,6 @@ width: 110%;
   margin: 20px 0;
   color: #bfbfbf;
   max-width: 300px;
-}
-.footer-col form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 .footer-col input {
   height: 40px;
@@ -613,3 +608,18 @@ width: 110%;
   }
 }
 /* FOOTER END */
+
+
+
+.max-h-64 {
+  max-height: 16rem;
+}
+/*Quick overrides of the form input as using the CDN version*/
+.form-input,
+.form-textarea,
+.form-select,
+.form-multiselect {
+  background-color: #edf2f7;
+  padding: 10px;
+  border-radius: 10px;
+}
